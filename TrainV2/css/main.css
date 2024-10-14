@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --index: calc(1vw + 1vh);
+    --transition: cubic-bezier(.1, .7, 0, 1);
+}
+body {
+    background-image: url('../img/home_page/default_background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100%;
+    max-width: 1200px;
+}
+.title {
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+    z-index: 2;
+}
+.title-image {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    object-fit: cover;
+}
+.title-image:first-of-type {
+    left: -300px;
+}
+
+.title-image:last-of-type {
+    right: -300px;
+}
+.title h1 {
+    font-family: 'Great Vibes', cursive;
+    color: gold;
+    font-size: 6rem;
+    margin-bottom: 40px;
+}
+.title h4 {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #FFD700;
+    font-size: 2rem;
+    font-size: 2vw;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    z-index: 3;
+}
+.title h4:hover {
+    color: #FFFFFF;
+    text-shadow: 0px 0px 8px rgba(255, 215, 0, 0.8);
+}
+@media (max-width: 768px) {
+    .title {
+        font-size: 8vw; 
+    }
+    .title h1 {
+        font-size: 8vw; 
+    }
+    .title h4 {
+        font-size: 2vw; 
+    }
+}
+.items {
+    display: flex;
+    perspective: calc(var(--index) * 35);
+    margin-top: 160px;
+    justify-content: center;
+    gap: 1rem;
+    z-index: 1;
+    position: relative;
+}
+.item {
+    font-family: 'Great Vibes', cursive;
+    color: gold;
+    font-size: 1.2rem;
+    text-align: center;
+    position: relative;
+    background-color: #222;
+    width: calc(var(--index) * 12);
+    height: calc(var(--index) * 12);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
+    will-change: transform, filter;
+    filter: grayscale() brightness(.5);
+    z-index: 1;
+}
+.item::before, .item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    right: calc(var(--index) * -1);
+}
+.item::after {
+    left: calc(var(--index) * -1);
+}
+.items .item:hover {
+    transform: translateZ(calc(var(--index) * 5)); 
+    width: calc(var(--index) * 10); 
+    height: calc(var(--index) * 10); 
+    filter: inherit;
+    z-index: 100; 
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out, width 0.3s ease-in-out; /* Smooth transition */
+}
+.items .item:active, .items .item:focus {
+    width: calc(var(--index) * 10); 
+    height: calc(var(--index) * 10); 
+    transform: translateZ(calc(var(--index) * 5)); 
+    filter: inherit;
+    z-index: 101;
+    margin: 0 .45vw;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out, width 0.3s ease-in-out; /* Smooth transition */
+}
+.simulateur-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    z-index: 200;
+    position: relative;
+}
+#simulateur {
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+}
+#boutons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#boutons input[type=image] {
+    height: 32px;
+    border: solid black 2px;
+    cursor: pointer;
+}
+#boutons input[type=image]:disabled {
+    opacity: 0.5;
+    border: solid red 2px;
+}
