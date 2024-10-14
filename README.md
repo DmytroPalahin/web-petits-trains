@@ -56,4 +56,4 @@ Les contributions sont les bienvenues! Veuillez soumettre une pull request ou ou
 
 ## 🙏 Acknowledgements
 
-Merci à toutes les personnes qui ont contribué à ce projet, Palahin Dmytro et Adam Okba et notre professeur Étienne André et aux ressources open-source utilisées.
+Merci à toutes les personnes qui ont contribué à ce projet, **Palahin Dmytro** et **Adam Okba** et notre professeur **Étienne André** et aux ressources open-source utilisées.
