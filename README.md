@@ -48,9 +48,12 @@ simulateur-de-trains/
 │   └── set.js
 ├── index.html
 └── train.html
+```
 
 ## 🤝 Contributing
+
 Les contributions sont les bienvenues! Veuillez soumettre une pull request ou ouvrir une issue pour discuter des changements.
 
 ## 🙏 Acknowledgements
+
 Merci à toutes les personnes qui ont contribué à ce projet, Palahin Dmytro et Adam Okba et notre professeur Étienne André et aux ressources open-source utilisées.
