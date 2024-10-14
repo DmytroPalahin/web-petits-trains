@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Simulateur de Trains</title>
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="icon" href="img/home_page/train_icon.jpg" type="image/jpg">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="icon" href="img/home_page/train_icon.jpg" type="image/jpg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
     </head>
     <body>
         <div class="wrapper">
             <div class="title">
-                <img src="img/home_page/train.jpg" alt="Train Left" class="title-image" id="leftStaticImage">
+                <img src="img/home_page/train.jpg" alt="Train Left" class="title-image" id="leftStaticImage" />
                 <h1>Simulateur de Trains</h1>
-                <img src="img/home_page/train2.jpg" alt="Train Right" class="title-image" id="rightStaticImage">
+                <img src="img/home_page/train2.jpg" alt="Train Right" class="title-image" id="rightStaticImage" />
                 <h4 id="titre_dynamique">Choisissez une Carte</h4>
             </div>
             <div class="frame">
@@ -24,9 +24,24 @@
                 </div>
             </div>
             <div class="items">
-                <div class="item" id="desert" tabindex="1" style="background-image: url(img/home_page/desert_world.jpg)"></div>
-                <div class="item" id="tropic" tabindex="1" style="background-image: url(img/home_page/tropic_world.jpg)"></div>
-                <div class="item" id="ice" tabindex="1" style="background-image: url(img/home_page/ice_world.jpg)"></div>
+                <div
+                    class="item"
+                    id="desert"
+                    tabindex="1"
+                    style="background-image: url(img/home_page/desert_world.jpg)"
+                ></div>
+                <div
+                    class="item"
+                    id="tropic"
+                    tabindex="1"
+                    style="background-image: url(img/home_page/tropic_world.jpg)"
+                ></div>
+                <div
+                    class="item"
+                    id="ice"
+                    tabindex="1"
+                    style="background-image: url(img/home_page/ice_world.jpg)"
+                ></div>
             </div>
         </div>
         <div class="simulateur-container">
@@ -34,19 +49,54 @@
                 Railway simulator (your browser does not support canvas)
             </canvas>
             <div id="boutons">
-                <input type="image" id="bouton_foret" alt="Forêt" src="img/Winter/snow5.png">
-                <input type="image" id="bouton_eau" alt="Eau" src="img/Winter/ice4.png">
-                <input type="image" id="bouton_obstacle_1" alt="Eau" src="img/Winter/obstacle1.png">
-                <input type="image" id="bouton_rail_horizontal" alt="Rail horizontal" src="img/Winter/rail-horizontal.png">
-                <input type="image" id="bouton_rail_vertical" alt="Rail vertical" src="img/Winter/rail-vertical.png">
-                <input type="image" id="bouton_rail_droite_vers_haut" alt="Rail allant de droite vers le haut" src="img/Winter/rail-droite-vers-haut.png">
-                <input type="image" id="bouton_rail_haut_vers_droite" alt="Rail allant du haut vers la droite" src="img/Winter/rail-haut-vers-droite.png">
-                <input type="image" id="bouton_rail_droite_vers_bas" alt="Rail allant de la droite vers le bas" src="img/Winter/rail-droite-vers-bas.png">
-                <input type="image" id="bouton_rail_bas_vers_droite" alt="Rail allant du bas vers la droite" src="img/Winter/rail-bas-vers-droite.png">
-                <input type="image" id="bouton_train_1" alt="Locomotive seule" src="img/Winter/locomotive.png">
-                <input type="image" id="bouton_train_2" alt="Locomotive et 1 wagon" src="img/Winter/loco-1-wagon.png">
-                <input type="image" id="bouton_train_4" alt="Locomotive et 3 wagons" src="img/Winter/loco-3-wagons.png">
-                <input type="image" id="bouton_train_6" alt="Locomotive et 5 wagons" src="img/Winter/loco-5-wagons.png">
+                <input type="image" id="bouton_foret" alt="Forêt" src="img/Winter/snow5.png" />
+                <input type="image" id="bouton_eau" alt="Eau" src="img/Winter/ice4.png" />
+                <input type="image" id="bouton_obstacle_1" alt="Eau" src="img/Winter/obstacle1.png" />
+                <input
+                    type="image"
+                    id="bouton_rail_horizontal"
+                    alt="Rail horizontal"
+                    src="img/Winter/rail-horizontal.png"
+                />
+                <input type="image" id="bouton_rail_vertical" alt="Rail vertical" src="img/Winter/rail-vertical.png" />
+                <input
+                    type="image"
+                    id="bouton_rail_droite_vers_haut"
+                    alt="Rail allant de droite vers le haut"
+                    src="img/Winter/rail-droite-vers-haut.png"
+                />
+                <input
+                    type="image"
+                    id="bouton_rail_haut_vers_droite"
+                    alt="Rail allant du haut vers la droite"
+                    src="img/Winter/rail-haut-vers-droite.png"
+                />
+                <input
+                    type="image"
+                    id="bouton_rail_droite_vers_bas"
+                    alt="Rail allant de la droite vers le bas"
+                    src="img/Winter/rail-droite-vers-bas.png"
+                />
+                <input
+                    type="image"
+                    id="bouton_rail_bas_vers_droite"
+                    alt="Rail allant du bas vers la droite"
+                    src="img/Winter/rail-bas-vers-droite.png"
+                />
+                <input type="image" id="bouton_train_1" alt="Locomotive seule" src="img/Winter/locomotive.png" />
+                <input type="image" id="bouton_train_2" alt="Locomotive et 1 wagon" src="img/Winter/loco-1-wagon.png" />
+                <input
+                    type="image"
+                    id="bouton_train_4"
+                    alt="Locomotive et 3 wagons"
+                    src="img/Winter/loco-3-wagons.png"
+                />
+                <input
+                    type="image"
+                    id="bouton_train_6"
+                    alt="Locomotive et 5 wagons"
+                    src="img/Winter/loco-5-wagons.png"
+                />
 
                 <button type="button" id="bouton_pause">Pause</button>
 
